@@ -4,6 +4,7 @@
  */
 package mx.itson.carrito.entidades;
 
+import mx.itson.carrito.enums.TipoDeCarroceria;
 import mx.itson.carrito.enums.TipoMotor;
 
 /**
@@ -11,6 +12,20 @@ import mx.itson.carrito.enums.TipoMotor;
  * @author alumnog
  */
 public class Carro {
+
+    /**
+     * @return the tipoDeCarroceria
+     */
+    public TipoDeCarroceria getTipoDeCarroceria() {
+        return tipoDeCarroceria;
+    }
+
+    /**
+     * @param tipoDeCarroceria the tipoDeCarroceria to set
+     */
+    public void setTipoDeCarroceria(TipoDeCarroceria tipoDeCarroceria) {
+        this.tipoDeCarroceria = tipoDeCarroceria;
+    }
 
     /**
      * @return the tipoMotor
@@ -88,6 +103,7 @@ public class Carro {
     private String marca;
     private double kilometraje;
     private TipoMotor tipoMotor;
+    private TipoDeCarroceria tipoDeCarroceria;
  /***
   * calcula el tiempo que tarda el carro en recorrer una distancia.
   * @param distancia Distancia que recorrerá el carro 

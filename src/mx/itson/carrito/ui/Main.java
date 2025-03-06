@@ -6,6 +6,7 @@ package mx.itson.carrito.ui;
 
 import java.util.Scanner;
 import mx.itson.carrito.entidades.Carro;
+import mx.itson.carrito.enums.TipoDeCarroceria;
 import mx.itson.carrito.enums.TipoMotor;
 
 /**
@@ -31,6 +32,7 @@ public class Main {
         bmw.setYear(2022);
         bmw.setKilometraje(10000);
         bmw.setTipoMotor(TipoMotor.HÍBRIDO);
+        bmw.setTipoDeCarroceria(TipoDeCarroceria.FAMILIAR);
         
         double tiempo = bmw.calcularTiempo(distancia, velocidad);
         System.out.println("El tiempo que le tomara al carro " + bmw.getMarca() +
