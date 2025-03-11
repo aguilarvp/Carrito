@@ -14,6 +14,34 @@ import mx.itson.carrito.enums.TipoMotor;
 public class Carro {
 
     /**
+     * @return the vendedor
+     */
+    public Vendedor getVendedor() {
+        return vendedor;
+    }
+
+    /**
+     * @param vendedor the vendedor to set
+     */
+    public void setVendedor(Vendedor vendedor) {
+        this.vendedor = vendedor;
+    }
+
+    /**
+     * @return the propietario
+     */
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
+
+    /**
      * @return the tipoDeCarroceria
      */
     public TipoDeCarroceria getTipoDeCarroceria() {
@@ -104,6 +132,9 @@ public class Carro {
     private double kilometraje;
     private TipoMotor tipoMotor;
     private TipoDeCarroceria tipoDeCarroceria;
+    private Propietario propietario;
+    private Vendedor vendedor;
+    
  /***
   * calcula el tiempo que tarda el carro en recorrer una distancia.
   * @param distancia Distancia que recorrerá el carro 
